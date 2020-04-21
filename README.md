@@ -38,6 +38,9 @@ const plugin = new VConsoleStatsPlugin(vConsole);
 
 ## Features
 
+- Show/Close Stats
+- Change Stats Panel
+
 ### stats.js
 
 #### JavaScript Performance Monitor ####
@@ -59,5 +62,3 @@ This class provides a simple info box that will help you monitor your code perfo
 ![mb.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/mb.png)
 ![custom.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/custom.png)
 
-- Show/Close Stats
-- Change Stats Panel
