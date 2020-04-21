@@ -1,46 +1,36 @@
 var pkg = require('./package.json');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var path = require('path')
 
 module.exports = {
   devtool: false,
   entry: {
-    vconsole : './src/resources.js'
+    vconsole : './src/stats.js'
   },
   output: {
-    path: './dist',
-    filename: 'vconsole-resources.min.js',
-    library: 'vConsole-resources',
+    path: path.join(__dirname, './dist'),
+    filename: 'vconsole-stats.min.js',
+    library: 'vconsole-stats',
     libraryTarget: 'umd',
-    umdNameDefine: true
+    umdNamedDefine: true
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.html$/, loader: 'html'
-      },
-      { 
-        test: /\.js$/, loader: 'babel'
+        test: /\.js$/, use: ['babel-loader']
       },
       {
-        test: /\.less$/, loader: 'style!css!less'
+        test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader']
       }
     ]
   },
-  htmlLoader: {
-    ignoreCustomFragments: [/\{\{.*?}}/]
-  },
   plugins: [
-    new webpack.BannerPlugin([
+    new webpack.BannerPlugin({
+      banner: [
         pkg.name + ' v' + pkg.version + ' (' + pkg.homepage + ')',
         'Copyright ' + new Date().getFullYear() + ', ' + pkg.author,
-        pkg.license +' license'
-    ].join('\n'))
-    ,new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
+        pkg.license + ' license'
+      ].join('\n')
     })
   ]
-
 };
