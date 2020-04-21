@@ -19,7 +19,8 @@
     "url": "git+https://github.com/smackgg/vconsole-stats.git"
   },
   "dependencies": {
-    "stats.js": "^0.17.0"
+    "stats.js": "^0.17.0",
+    "vconsole-stats-plugin": "^0.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.5",

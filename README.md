@@ -21,7 +21,7 @@ Download the latest version(copy dist/vconsole-stats-plugin.min.js). See all dem
 <script>
   // init vConsole
   const vConsole = new VConsole();
-  const plugin = new VConsole.VConsoleStatsPlugin(vConsole);
+  const plugin = new VConsoleStatsPlugin(vConsole);
 </script>
 ```
 

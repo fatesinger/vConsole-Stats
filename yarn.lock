@@ -4334,6 +4334,13 @@ v8-compile-cache@2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.0.3.tgz#00f7494d2ae2b688cfe2899df6ed2c54bef91dbe"
   integrity sha512-CNmdbwQMBjwr9Gsmohvm0pbL954tJrNzf6gWL3K+QMQf00PF7ERGrEiLgjuU3mKreLC2MeGhUsNV9ybTbLgd3w==
 
+vconsole-stats-plugin@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/vconsole-stats-plugin/-/vconsole-stats-plugin-0.0.2.tgz#037e6d6511580a00bcf2323a7b43a8c604bf55a3"
+  integrity sha512-CEj0gzFhQ2cNtg2n29RcDL2D5Sz/y94EVXq1pkI5MgS66hfLpPcCbr+qDreTZydcoO1/SKMbDSyYnJEeQHYCDg==
+  dependencies:
+    stats.js "^0.17.0"
+
 vconsole@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/vconsole/-/vconsole-3.3.4.tgz#a7dacd8887b3d3e902e8d18425cda56c34e77f51"

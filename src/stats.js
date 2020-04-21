@@ -96,6 +96,6 @@ class VConsoleStatsPlugin {
   }
 }
 
-window.VConsole.VConsoleStatsPlugin = VConsoleStatsPlugin;
+window.VConsoleStatsPlugin = VConsoleStatsPlugin;
 
 export default VConsoleStatsPlugin;
