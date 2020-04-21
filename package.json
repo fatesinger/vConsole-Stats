@@ -1,6 +1,6 @@
 {
   "name": "vconsole-stats-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A plugin for vConsole.",
   "homepage": "https://github.com/smackgg/vconsole-stats",
   "main": "dist/vconsole-stats-plugin.min.js",
