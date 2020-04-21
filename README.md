@@ -11,6 +11,7 @@ Based on the [Stats https://github.com/mrdoob/stats.js](https://github.com/mrdoo
 
 [show demo](https://smackgg.github.io/vConsole-Stats/example/demo.html)
 
+
 # Usage
 
 Download the latest version. (copy dist/vconsole-stats.min.js).See demo code: [```/example/demo.html```](./example/demo.html)
@@ -36,8 +37,9 @@ const plugin = new VConsoleStatsPlugin(vConsole);
 ```
 
 ## Features
-stats.js
 ========
+
+###stats.js
 
 #### JavaScript Performance Monitor ####
 
