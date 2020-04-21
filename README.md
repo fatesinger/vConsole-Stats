@@ -9,7 +9,31 @@ Based on the [Stats https://github.com/mrdoob/stats.js](https://github.com/mrdoo
 
 ## Demo
 
-show demo
+[show demo](https://smackgg.github.io/vConsole-Stats/example/demo.html)
+
+# Usage
+
+Download the latest version. (copy dist/vconsole-stats.min.js).See demo code: [```/example/demo.html```](./example/demo.html)
+```html
+<script src="path/to/vconsole.min.js"></script>
+<script src="path/to/vconsole-stats.min.js"></script>
+<script>
+  // init vConsole
+  const vConsole = new VConsole();
+  const plugin = new VConsole.VConsoleStatsPlugin(vConsole);
+</script>
+```
+
+Or, install via npm:
+```bash
+npm install vconsole-stats-plugin -S
+```
+```js
+import VConsole from 'vconsole';
+import VConsoleStatsPlugin from 'vconsole-stats-plugin';
+const vConsole = new VConsole();
+const plugin = new VConsoleStatsPlugin(vConsole);
+```
 
 ## Features
 stats.js
@@ -27,6 +51,7 @@ This class provides a simple info box that will help you monitor your code perfo
 
 ### Screenshots ###
 
+![demo.png](./screenshots/demo.png)
 ![fps.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/fps.png)
 ![ms.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/ms.png)
 ![mb.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/mb.png)
