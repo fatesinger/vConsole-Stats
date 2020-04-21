@@ -9,8 +9,8 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, './dist'),
-    filename: 'vconsole-stats.min.js',
-    library: 'vconsole-stats',
+    filename: 'vconsole-stats-plugin.min.js',
+    library: 'vconsole-stats-plugin',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

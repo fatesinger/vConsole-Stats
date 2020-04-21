@@ -1,6 +1,6 @@
-vconsole-stats
+vconsole-stats-plugin
 ==============================
-[![npm version](https://badge.fury.io/js/vconsole-stats.svg)](https://badge.fury.io/js/vconsole-stats)
+[![npm version](https://badge.fury.io/js/vconsole-stats-plugin.svg)](https://badge.fury.io/js/vconsole-stats-plugin)
 
 A vConsole plugin which can show Stats in front-end.
 
@@ -14,10 +14,10 @@ Based on the [Stats https://github.com/mrdoob/stats.js](https://github.com/mrdoo
 
 # Usage
 
-Download the latest version. (copy dist/vconsole-stats.min.js).See demo code: [```/example/demo.html```](./example/demo.html)
+Download the latest version(copy dist/vconsole-stats-plugin.min.js). See all demo code: [```/example/demo.html```](./example/demo.html)
 ```html
 <script src="path/to/vconsole.min.js"></script>
-<script src="path/to/vconsole-stats.min.js"></script>
+<script src="path/to/vconsole-stats-plugin.min.js"></script>
 <script>
   // init vConsole
   const vConsole = new VConsole();
@@ -61,13 +61,3 @@ This class provides a simple info box that will help you monitor your code perfo
 
 - Show/Close Stats
 - Change Stats Panel
-
-
-## Usage
-
-Simply import `vconsole-stats.min.js` after `vconsole.min.js`:
-
-```html
-<script src="path/to/vconsole.min.js"></script>
-<script src="path/to/vconsole-stats.min.js"></script>
-```

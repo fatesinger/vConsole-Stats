@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A plugin for vConsole.",
   "homepage": "https://github.com/smackgg/vconsole-stats",
-  "main": "dist/vconsole-stats.min.js",
+  "main": "dist/vconsole-stats-plugin.min.js",
   "scripts": {
     "dist": "export NODE_ENV=production && ./node_modules/.bin/webpack --mode production --progress",
     "vconsole": "cp node_modules/vconsole/dist/vconsole.min.js example/lib/vconsole.min.js"
