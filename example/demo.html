@@ -3,15 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vConsole-resources</title>
-  <link href="./lib/weui.min.css" rel="stylesheet"/>
+  <title>vconsole-stats</title>
   <link href="./lib/demo.css" rel="stylesheet"/>
 
-  <script src="./lib/zepto.min.js"></script>
-  <script src="./lib/zepto.touch.min.js"></script>
-
   <script src="./lib/vconsole.min.js"></script>
-  <script src="../dist/vconsole-resources.min.js"></script>
+  <script src="../dist/vconsole-stats.min.js"></script>
 </head>
 <body ontouchstart>
   <div class="page">
@@ -23,6 +19,7 @@
 </body>
 
 <script>
-
+  const vConsole = new VConsole();
+  new window.VConsole.VConsoleStatsPlugin(vConsole);
 </script>
 </html>
