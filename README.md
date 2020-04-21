@@ -37,9 +37,8 @@ const plugin = new VConsoleStatsPlugin(vConsole);
 ```
 
 ## Features
-========
 
-###stats.js
+### stats.js
 
 #### JavaScript Performance Monitor ####
 
