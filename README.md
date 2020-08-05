@@ -6,6 +6,14 @@ A vConsole plugin which can show Stats in front-end.
 
 Based on the [Stats https://github.com/mrdoob/stats.js](https://github.com/mrdoob/stats.js)
 
+### Screenshots ###
+
+![demo.png](./screenshots/demo.png)
+
+![fps.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/fps.png)
+![ms.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/ms.png)
+![mb.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/mb.png)
+![custom.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/custom.png)
 
 ## Demo
 
@@ -52,13 +60,4 @@ This class provides a simple info box that will help you monitor your code perfo
 * **MB** MBytes of allocated memory. (Run Chrome with `--enable-precise-memory-info`)
 * **CUSTOM** User-defined panel support.
 
-
-### Screenshots ###
-
-![demo.png](./screenshots/demo.png)
-
-![fps.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/fps.png)
-![ms.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/ms.png)
-![mb.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/mb.png)
-![custom.png](https://raw.githubusercontent.com/mrdoob/stats.js/master/files/custom.png)
 
