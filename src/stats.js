@@ -10,7 +10,6 @@ import Stats from 'stats.js';
 class VConsoleStatsPlugin {
   constructor(vConsole) {
     this.vConsole = vConsole;
-    this.$ = vConsole.$;
     this.dom = null;
     this.requestID = null;
     this.stats = null;
@@ -21,11 +20,16 @@ class VConsoleStatsPlugin {
     const vConsoleStats = new window.VConsole.VConsolePlugin('Stats', 'Stats');
 
     vConsoleStats.on('ready', () => {
-      const { $ } = this;
-      $.delegate($.one('.vc-stats-buttons'), 'click', '.vc-stats-button', (e) => {
-        const currentType = e.target.dataset.type;
-        this.changePanel(currentType);
-      });
+      const statsButtons = document.querySelector('.vc-stats-buttons');
+      if (statsButtons) {
+        statsButtons.addEventListener('click', (e) => {
+          const target = e.target;
+          if (target && target.classList.contains('vc-stats-button')) {
+            const currentType = target.dataset.type;
+            this.changePanel(currentType);
+          }
+        });
+      }
     });
 
     vConsoleStats.on('renderTab', (callback) => {
